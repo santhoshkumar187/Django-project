@@ -1,0 +1,456 @@
+{% load static%}
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Watch Mart</title>
+        <!-- Favicon-->
+        <link rel="icon" type="{% static 'image/x-icon'%}" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css'%}" rel="stylesheet" />
+        <link href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css'%}" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{%static 'css/styles.css'%}" rel="stylesheet" />
+        <script src=" {%static 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'%}"></script>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Watch Mart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#abt">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Signin</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#prod">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="index.html">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-3">
+            <div class="container px-4 px-lg-5 my-5">
+                <div>
+                    <div class="row">
+                        <div class="col-md-3 col-xm-0">
+                            <img src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\wal.jpg'%}" width="100%"alt = "watches">
+                        </div>
+                        <div class="col-md-6 col-xm-12" style="border:10px rgb(142, 146, 142);">
+                        <img src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\frontlogo.webp'%}"  width="100%"alt = "watches"></div>
+                        <div class="col-md-3 col-xm-0">
+                            <img src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\wal.jpg'%}" width="100%"alt = "watches">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Shop in style</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Watch Mart</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\img3.jpg'%}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Preminum Product</h5>
+                                    <!-- Product price-->
+                                    Rs.6000.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\img2.webp'%}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">WWOOR</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">Rs.7000.00</span>
+                                    Rs.$4800.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\img4.webp'%}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Geneva</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">Rs.5800.00</span>
+                                    Rs.4800.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\img5.jpg'%}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Curren</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    Rs.4000.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\img6.webp'%}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Titan</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$6500.00</span>
+                                    $4750.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\img7.jpg'%}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Preminum Product</h5>
+                                    <!-- Product price-->
+                                    Rs.8000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\img8.webp'%}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sonata</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">Rs.4000.00</span>
+                                    Rs.3500.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\img9.webp'%}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sonata</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    Rs.4000.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+        <hr>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <center><h3 id = "prod" style="font-family:Tahoma ;">Products</h3></center>
+            <div class="carousel-inner" style="background-color:rgb(63, 63, 63)" >
+                <div class = "row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 col-xm-12">
+                        <div class="carousel-item active">
+                            <img src="{%static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\curimg1.webp'%}" alt="watch" class="d-block" style="width:100%" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{%static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\wal2.webp'%}" alt="watch" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{%static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\curimg3.webp'%}" alt="watch" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{%static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\wal3.jpg'%}" alt="watch" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{%static 'C:\Users\s.santhosh kumar\Desktop\sample\static\assets\wal4.jpg'%}" alt="watch" class="d-block" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>    
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <hr>
+          <br>
+          <div class="container">
+            <center><h3 id = "abt" style="font-family:Tahoma ;">About Us</h3></center>
+            <div style="background-color:rgb(236, 233, 233) ;">
+                <p style = "background-color: blanchedalmond; border: 2px black; font-weight: bolder; font-family: Cambria; font-style: justify;" align = center>Buy from TheWatchShop.in with confidence: as an official retailer for all brands Since 2008 Listed, all watches purchased from us are provided with the official manufacturer's Warranty.</p>
+                <p style="font-size: 18px; font-family: Verdana; ">Reasons why you should trust TheWatchShop.in    With your purchase
+
+                    100% genuine watches.  Every item sold by TheWatchShop.in is a 100% genuine item, supplied to us from the manufacturer directly.  We do not sell second hand or replica watches.
+                    We are official retailers for all of our brands. This means all of our stock comes directly from the manufacturer and therefore comes with the correct instructions, packaging and 100% valid guarantee.  Many sites out there, allow third parties or independent sellers to sell on their websites, who will import from the ‘grey market’ – meaning your watch could be from a number of countries such as China and NOT include the official guarantee.
+                    Full refund policy.  If for any reason you are unhappy with your purchase, as long as it is in brand new and unworn condition, you can return it to us for a full refund or exchange within 7 days of delivery. 
+                    Free delivery.  We do not charge anything extra for delivery unlike other sites & the final price on our sites includes the delivery charges as well. We deliver to most locations across India through our logistical partner Bluedart.
+                    If it says In Stock, it’s In Stock.  We have a live stock tracking system which means our physical stock is represented accurately on our website: if it’s shown as being in stock on our site that means that we have the item in stock and ready for processing.  Many sites out there list hundreds of watches on their site and wait until they receive your order before they try and obtain the watch from their sources, causing delays of days or weeks.  In the unlikely event that a watch is not available, we will contact you immediately. </p>
+            </div>
+          </div>    
+          <br><br><br>
+          <br>
+        <div class="container">
+            <!--Section: Contact v.2-->
+            <section class="mb-4">
+
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                    a matter of hours to help you.</p>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Your email</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p>WATCH MART SALEM</p>
+                            </li>
+
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>+ 01 234 567 89</p>
+                            </li>
+
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>contact@watchmart.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+            </section>
+            <!--Section: Contact v.2-->
+        </div>
+            <br>
+          <div>
+            <center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15651.321432695197!2d77.5963265!3d11.273877599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1654422189689!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </center>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Watch Mart 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
